@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="tests" value="tests" size="25">
+<!--start table-->
+<table border=”1” cellspacing=”2” cellpadding=”5”>
+    <tr>
+        <td>Catagory</td>
+        <td>grades (a % seperated by commas)</td>
+        <td>weight (as a % 0-100)</td>
+    </tr>
+    <tr>
+        <td>Homework</td>
+        <td><input type="text" id="homework" value="" size="25"></td>
+        <td><input type="text" id="homeworkValue" value="" size="25"></td>
+    </tr>
+    <tr>
+        <td>Quizes</td>
+        <td><input type="text" id="quizzes" value="" size="25"></td>
+        <td><input type="text" id="quizzesValue" value="" size="25"></td>
+    </tr>
+    <tr>
+        <td>Tests</td>
+        <td><input type="text" id="tests" value="" size="25"></td>
+        <td><input type="text" id="testsValue" value="" size="25"></td>
+    </tr>
+    <tr>
+        <td>Midterm</td>
+        <td><input type="text" id="midterm" value="" size="25"></td>
+        <td><input type="text" id="midtermValue" value="" size="25"></td>
+    </tr>
+</table>
+<!--calc grade button-->
+<button id="calculateGrade" onclick="calculateCurrentGrade()">Calcualte Grade</button>
+<br>
+Your Current Grade Is: <div id="currentGrade"></div>
+
+
+<!--gets midterm weight and what grade you want-->
+Midterm Weight<input type="text" id="midtermWeight" value="" size="25">
+<br>
+Grade You Want: <input type="text" id="gradeWanted" value="" size="25">
+<br>
+<!--grade needed button-->
+<button id="calculateGrade" onclick="calculateCurrentGrade()">Calcualte Grade Needed </button>
+You need on your final a: <div id="finalGradeNeeded"></div>
 </body>
 </html>
