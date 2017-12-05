@@ -67,6 +67,7 @@ function convertString(input){
        finalArray[i] = parseInt(newArray[i]);
        if(parseInt(newArray[i])>150){
            aavalidate+=1
+
        }
     }
    console.log(finalArray);
