@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-image: url(https://wallpaperscraft.com/image/paper_crumpled_light_shadow_35117_1920x1080.jpg);
+    font-size: 35px;
+
+
+}
+
+button{
+    padding: 13px 10px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+}
+
+input{
+    padding:15px 130px;
+    font-size: 20px;
+}
+
+table{
+    margin-top: 30px;
+}
+
+#finalValue{
+    padding: 3px 0px;
+}
+
+#gradeWanted{
+    padding: 3px 0px;
+}
+
+#calculateGrade{
+    margin-left: -130px;
+}
+#calculateGradeNeeded{
+    margin-left: 71px;
+}

@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css"/>
+
     <script src="script.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+Adin's Handy Dandy Grade Calculator
+
 <!--start table-->
-<table border=”1” cellspacing=”2” cellpadding=”5”>
+<table border=”1” cellspacing=”1” cellpadding=”5” cellheight="5" align="center">
     <tr>
         <td>Catagory</td>
-        <td>grades (a % seperated by commas)</td>
+        <td>grades (as a % seperated by commas)</td>
         <td>weight (as a % 0-100)</td>
+
     </tr>
-    <tr>
+    <tr id="homeworkRow">
         <td>Homework</td>
-        <td><input type="text" id="homework" value="" size="25"></td>
-        <td><input type="text" id="homeworkValue" value="" size="25"></td>
+        <td><input type="text" id="homework" value="100,90,100,80,100,100" size="25"></td>
+        <td><input type="text" id="homeworkValue" value="20" size="25"></td>
     </tr>
-    <tr>
+    <tr id="quizzRow">
         <td>Quizes</td>
-        <td><input type="text" id="quizzes" value="" size="25"></td>
-        <td><input type="text" id="quizzesValue" value="" size="25"></td>
+        <td><input type="text" id="quizzes" value="60,89,90,72,95" size="25"></td>
+        <td><input type="text" id="quizzesValue" value="10" size="25"></td>
     </tr>
-    <tr>
+    <tr id="testRow">
         <td>Tests</td>
-        <td><input type="text" id="tests" value="" size="25"></td>
-        <td><input type="text" id="testsValue" value="" size="25"></td>
+        <td><input type="text" id="tests" value="93,80,95,91,99" size="25"></td>
+        <td><input type="text" id="testsValue" value="40" size="25"></td>
     </tr>
-    <tr>
+    <tr id="midtermRow">
         <td>Midterm</td>
-        <td><input type="text" id="midterm" value="" size="25"></td>
-        <td><input type="text" id="midtermValue" value="" size="25"></td>
+        <td><input type="text" id="midterm" value="100" size="25"></td>
+        <td><input type="text" id="midtermValue" value="20" size="25"></td>
     </tr>
 </table>
 <!--calc grade button-->
 <button id="calculateGrade" onclick="calculateCurrentGrade()">Calcualte Grade</button>
-<br>
+
 Your Current Grade Is: <div id="currentGrade"></div>
 
 
 <!--gets midterm weight and what grade you want-->
-Midterm Weight<input type="text" id="midtermWeight" value="" size="25">
+Weight of Final Exam:<input type="text" id="finalValue" value="" size="25">
 <br>
-Grade You Want: <input type="text" id="gradeWanted" value="" size="25">
+The Grade You Want: <input type="text" id="gradeWanted" value="" size="25">
 <br>
 <!--grade needed button-->
-<button id="calculateGrade" onclick="calculateCurrentGrade()">Calcualte Grade Needed </button>
-You need on your final a: <div id="finalGradeNeeded"></div>
+<button id="calculateGradeNeeded" onclick="calculateGradeNeeded()">Calcualte Grade Needed </button>
+On your final you need at least a: <div id="finalGradeNeeded"></div>
 </body>
 </html>
